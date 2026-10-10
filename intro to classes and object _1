@@ -1,1 +1,33 @@
-
+class Main{
+    public static void main(String[]args){
+        Student s1= new Student(); //creating obj-1
+        Student s2= new Student();//creating obj--2
+        //assigning details using objects thorugh classes 
+        s1.name ="chandu";
+        s1.rollno=87;
+        s1.sec='B';
+        s1.age=21;
+        s2.name ="kiran";
+        s2.rollno=37;
+        s2.sec='A';
+        s2.age=22;
+        s1.markAttandance();
+        s2.markAttandance();
+        s1.print();
+        s2.print();  
+    }
+}
+class Student {
+    //characters
+    String name ;
+    int rollno;
+    char sec;
+    int age;
+    //behaviour
+    void markAttandance(){//no paramters needed because this functions are itself identity of this class
+        System.out.println("Attandance is marked by :"+name);
+    }
+    void print(){
+        System.out.println("Name:"+name+" "+"Roll No:"+rollno+" "+"section:"+sec+" "+"Age:"+age);
+    }
+}
