@@ -1,0 +1,30 @@
+// constructor chaining
+class Main{
+    public  static void main(String args[]){
+        std s1= new std();
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+        System.out.println(s1.roll); 
+    }
+}
+class std{
+    String name;
+    int age;
+    int roll;
+    std(){
+        this("chandra",1);
+        System.out.println("from 1th");
+    }
+    std(String name , int age){
+        this("veera",2,21);
+        System.out.println("from 2th");
+    }
+    std(String name , int age, int roll){
+        this.name=name;
+        this.age=age;
+        this.roll=roll;
+        System.out.println("from 3th");
+    }
+
+    
+}
